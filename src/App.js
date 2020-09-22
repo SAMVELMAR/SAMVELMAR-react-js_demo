@@ -1,64 +1,64 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Counter from './demo/Counter';
+//import User from './demo/User';
 
 
-function First(){
-let name = 'Component';
-  return(
-    <div>
-      <hr/>
-  <h1>My First {name}</h1>
-      <hr/> 
-    </div>
-  );
+// function First(){
+// let name = 'Component'
+//   return(
+//     <div>
+//       <hr/>
+//   <h1>My First {name}</h1>
+//       <hr/> 
+//     </div>
+//   )
 
-}
+// }
 
-function Learning(proops){
-    return(
+// function Learning(proops){
+//     return(
 
-    <h2>I'm learning {proops.name} Component</h2>
+//     <h2>I'm learning ReactJs {proops.name}</h2>
        
-    );
+//     )
   
-  }
+//   }
 
-  function Secound(){
-    let comp = 'Component';
-      return(
-        <div>
-          <hr/>
-      <h1>My Secound {comp}</h1>
-          <hr/> 
-        </div>
-      );
+//   function Secound(){
+//     let comp = 'Component'
+//       return(
+//         <div>
+//           <hr/>
+//       <h1>My Secound {comp}</h1>
+//           <hr/> 
+//         </div>
+//       )
     
-    }
+//     }
     
-
+// function Person1(proops){
+//   let user = 'Person1'
+//   return(
+// <div>
+//   <mark>
+//   <h3>{proops.hi} from Component {user}</h3>
+//   </mark>
+// </div>
+//   )
+// }
 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Learning name = 'ReactJs'/>
+    <div>
+      <header>
+        <Counter/>
+        {/* <User name = 'John' surname = 'Smith'/> */}
+        {/* <Learning name = 'Components'/>
         <First/>
         <Secound/>
-
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Person1 hi = 'Hello'/> */}
       </header>
     </div>
   );
