@@ -19,7 +19,6 @@ class Price extends Component {
             price = parseFloat(price) / rate + '$'
         }
 
-
         this.setState({
             price: price
         })
@@ -37,7 +36,6 @@ class Price extends Component {
                 </p>
         )
     }
-
 }
 
 
