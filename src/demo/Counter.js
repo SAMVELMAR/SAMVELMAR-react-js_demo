@@ -26,7 +26,7 @@ class Counter extends Component {
 
     // }
 
-    handleButtonClick = (type) =>{
+    handleButtonClick = type =>{
         let {count} = this.state
 
 
