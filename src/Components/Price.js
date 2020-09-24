@@ -4,13 +4,13 @@ class Price extends Component {
     constructor(props){
         super(props)
         this.state = {
-            price: props.data,
-            rate: 487
+            price: props.data
         }
     }
 
     changeCurrency = () =>{
-        let { price, rate } = this.state
+        let { price } = this.state
+        let { rate } = this.props
         let currency = price[price.length - 1]
 
         if (currency === '$') {

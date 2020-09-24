@@ -9,7 +9,7 @@ class Product extends Component {
         let {name, price, description} = this.props
         return(
             <>  
-                <Price data = {price}/>
+                <Price data = {price} rate = '478'/>
                 <Name data = {name}/>
                 <Description data = {description}/>
             </>
